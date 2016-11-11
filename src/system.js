@@ -17,10 +17,10 @@ CSL.setupXml = function(xmlObject) {
             parser = new CSL.XmlJSON(dataObj);
         } else if ("undefined" !== typeof xmlObject.getAttribute) {
             // Assume DOM instance
-            parser = new CSL.XmlDOM(xmlObject);
+            throw new Error('xmldom is not supported');
         } else if ("undefined" !== typeof xmlObject.toXMLString) {
             // Assume E4X object
-            parser = new CSL.XmlE4X(xmlObject);
+            throw new Error('E4X is not supported');
         } else {
             // Assume JS object
             parser = new CSL.XmlJSON(xmlObject);

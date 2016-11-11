@@ -957,21 +957,12 @@ if (!CSL.XmlJSON) {
 if (!CSL.XmlDOM) {
     load("./src/xmldom.js");
 }
-if (!CSL.XmlE4X && "undefined" !== typeof XML) {
-    load("./src/xmle4x.js");
-}
 if (!CSL.System) {
     load("./src/system.js");
 }
 if (!CSL.getSortCompare) {
     load("./src/sort.js");
 }
-//if (!CSL.System.Xml.E4X) {
-//    load("./src/xmle4x.js");
-//}
-//if (!CSL.System.Xml.DOM) {
-//    load("./src/xmldom.js");
-//}
 // jslint OK
 if (!CSL.cloneAmbigConfig) {
     load("./src/util_disambig.js");
