@@ -70,7 +70,7 @@ class ApplyLicense:
         lines = lines.split('\n')
         for pos in range(0,len(lines),1):
             lines[pos] = " * %s" % lines[pos]
-        self.license = '/*\n%s\n */\n' % '\n'.join(lines)
+        self.license = '/**\n%s\n */\n' % '\n'.join(lines)
 
     def apply(self,suppressConsole=False):
         if not suppressConsole:
